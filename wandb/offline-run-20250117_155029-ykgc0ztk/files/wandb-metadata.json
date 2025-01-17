@@ -1,0 +1,114 @@
+{
+  "os": "Linux-5.4.0-144-generic-x86_64-with-glibc2.17",
+  "python": "CPython 3.8.20",
+  "startedAt": "2025-01-17T07:50:30.193937Z",
+  "args": [
+    "--model_config",
+    "configs/llama_60m.json",
+    "--lr",
+    "0.01",
+    "--galore_scale",
+    "0.25",
+    "--rank",
+    "128",
+    "--update_proj_gap",
+    "200",
+    "--batch_size",
+    "256",
+    "--total_batch_size",
+    "512",
+    "--num_training_steps",
+    "10000",
+    "--warmup_steps",
+    "1000",
+    "--weight_decay",
+    "0",
+    "--dtype",
+    "bfloat16",
+    "--eval_every",
+    "1000",
+    "--optimizer",
+    "galore_adamw"
+  ],
+  "program": "torchrun_main.py",
+  "codePath": "GaLore-master/torchrun_main.py",
+  "git": {
+    "remote": "https://github.com//QFOI/graph-o1.git",
+    "commit": "7b44171cdb2e5eb7f55a54e0282d6b496b575a7a"
+  },
+  "root": "/home/linsiyu/GaLore-master",
+  "host": "g2002",
+  "executable": "/home/linsiyu/miniconda3/envs/Galore/bin/python",
+  "codePathLocal": "torchrun_main.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_count": 8,
+  "disk": {
+    "/": {
+      "total": "234039422976",
+      "used": "58736205824"
+    }
+  },
+  "memory": {
+    "total": "1081838149632"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "slurm": {
+    "job_id": "47521"
+  },
+  "cudaVersion": "12.2"
+}
